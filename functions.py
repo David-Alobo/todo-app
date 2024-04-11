@@ -1,6 +1,6 @@
 import time
 
-def get_todos(filepath=r"C:\codebase\my_files\my_practice\todo app\todo.txt"):
+def get_todos(filepath="todo.txt"):
     """
         Read a text a file and return a list of to_do items
     """
@@ -8,7 +8,7 @@ def get_todos(filepath=r"C:\codebase\my_files\my_practice\todo app\todo.txt"):
             todos = file.readlines()
     return todos
 
-def write_todos(to_do_list_arg, filepath=r"C:\codebase\my_files\my_practice\todo app\todo.txt"):
+def write_todos(to_do_list_arg, filepath="todo.txt"):
     """
         Write a to_do items list in the text file
     """
